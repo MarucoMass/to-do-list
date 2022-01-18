@@ -22,18 +22,11 @@ function agregarTarea(event){
     lista.innerText = cajitaDeHaceres;
     lista.appendChild(botonBorrar);
     cajitaLista.appendChild(lista);
-
-    if (cajitaLista.innerHTML != " "){
-        cajitaLista.classList.remove('oculta');
-    } else {
-        cajitaLista.classList.add('oculta');
-    }
 }
 
 function borrarTarea(event){
     event.preventDefault();
     if(event.target.className ==='borrar'){
-        event.target.parentElement.remove();
-        
+        event.target.parentElement.remove();     
   }
 }
